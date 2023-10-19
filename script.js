@@ -16,29 +16,34 @@ const getComputerChoice = (arr) => {
 
 const getResult = () => {
     if(computerChoice.textContent == yourChoice.textContent){
-        result.textContent = "It's a draw!"
+result.textContent = "It's a draw!"
         scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "rock" && yourChoice == "paper"){
+     if(computerChoice.textContent == "Rock" && yourChoice.textContent == "Paper"){
+result.textContent = "You Win!"
+        score++;
+        scoreDisplay.textContent = Number(score);
+    }
+     if(computerChoice.textContent == "Rock" && yourChoice.textContent == "Scissor"){
+result.textContent = "You Lost!"
+        score++;
+        scoreDisplay.textContent = Number(score);
+    }
+     if(computerChoice.textContent == "Paper" && yourChoice.textContent == "Scissor"){
         result.textContent = "You Win!"
         score++;
         scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "paper" && yourChoice == "scissors"){
-        result.textContent = "You Win!"
+     if(computerChoice.textContent == "Scissor" && yourChoice.textContent == "Rock"){
+result.textContent = "You Win!"
         score++;
         scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "scissors" && yourChoice == "rock"){
-        result.textContent = "You Win!"
-        score++;
-        scoreDisplay.textContent = Number(score);
+     if(computerChoice.textContent == "Paper" && yourChoice.textContent == "Rock"){
+result.textContent = "You Lost!"
     }
-     if(computerChoice == "paper" && yourChoice == "rock"){
-        result.textContent = "You Lost!"
-    }
-     if(computerChoice == "scissor" && yourChoice == "paper"){
-        result.textContent = "You Lost!"
+     if(computerChoice.textContent == "Scissor" && yourChoice.textContent == "Paper"){
+result.textContent = "You Lost!"
     }
 }
 
