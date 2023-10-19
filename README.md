@@ -10,3 +10,5 @@ Concepts learned:
 - e.target.id
 - Math.floor()
 - MAth.random()
+
+  Site URL : https://balvinder1009.github.io/Rock-Paper-and-Scissor/
