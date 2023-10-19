@@ -16,26 +16,29 @@ const getComputerChoice = (arr) => {
 
 const getResult = () => {
     if(computerChoice.textContent == yourChoice.textContent){
-result.textContent = "It's a draw!"
+        result.textContent = "It's a draw!"
         scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "rock" and yourChoice == "paper"){
-result.textContent = "You Win!"
+     if(computerChoice == "rock" && yourChoice == "paper"){
+        result.textContent = "You Win!"
         score++;
+        scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "paper" and yourChoice == "scissors"){
-result.textContent = "You Win!"
+     if(computerChoice == "paper" && yourChoice == "scissors"){
+        result.textContent = "You Win!"
         score++;
+        scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "scissors" and yourChoice == "rock"){
-result.textContent = "You Win!"
+     if(computerChoice == "scissors" && yourChoice == "rock"){
+        result.textContent = "You Win!"
         score++;
+        scoreDisplay.textContent = Number(score);
     }
-     if(computerChoice == "paper" and yourChoice == "rock"){
-result.textContent = "You Lost!"
+     if(computerChoice == "paper" && yourChoice == "rock"){
+        result.textContent = "You Lost!"
     }
-     if(computerChoice == "scissor" and yourChoice == "paper"){
-result.textContent = "You Lost!"
+     if(computerChoice == "scissor" && yourChoice == "paper"){
+        result.textContent = "You Lost!"
     }
 }
 
